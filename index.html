@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Let's do the work</title>
+	<script src="./index.js" defer></script>
+	<style>
+		/*body{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}*/
+		.container{
+			border: 2px solid orange;
+			max-width: 800px;
+			width: 100%;
+		}
+		.alert{
+			text-align: center;
+			border: 1px solid;
+			padding: 1rem;
+		}
+		img{
+			width: 50%;
+			cursor: pointer;
+		}
+		.background{
+			text-align: center;
+			border: 1px solid;
+			padding: 1rem;
+		}
+		.image{
+			padding: 1rem;
+			border: 1px solid;
+			text-align: center;
+		}
+		button{
+			padding: 0.5rem 1rem;
+			font-weight: bold;
+			font-size: 1.1rem;
+			cursor: pointer;
+			margin: auto 1rem;
+		}
+		.btn{
+			display: flex;
+			justify-content: space-around;
+			margin: 1rem;
+		}
+		#btn-alert, #write{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="alert">
+			<h2>ALERTS</h2>
+			<img id="img" src="./images/img1.jpg" alt="">
+			<div class="btn">
+				<button id="btn-alert">Show an alert</button>
+				<button id="write">Write here</button>
+			</div>
+		</div>
+		<div class="background">
+			<h2>Change the background</h2>
+			<button id="color-1">Change color</button>
+			<button id="unset">Unset</button>
+		</div>
+		<div class="image">
+			<h2>Move to another image on hover</h2>
+			<img src="./images/img2.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>
